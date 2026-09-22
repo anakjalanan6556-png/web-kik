@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyberpunk Website</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    background:
+    linear-gradient(rgba(0,255,255,.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,0,255,.08) 1px, transparent 1px),
+    linear-gradient(135deg,#02010a,#09001d,#130022,#000000);
+    background-size:40px 40px,40px 40px,100% 100%;
+    color:#00ffff;
+}
+
+/* Efek cahaya */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(circle at top left,#00ffff55,transparent 40%),
+    radial-gradient(circle at bottom right,#ff00ff55,transparent 40%);
+    pointer-events:none;
+    animation:pulse 6s infinite alternate;
+}
+
+@keyframes pulse{
+    from{opacity:.5;}
+    to{opacity:1;}
+}
+
+.container{
+    width:90%;
+    max-width:700px;
+    padding:40px;
+    text-align:center;
+    border:2px solid #00ffff;
+    border-radius:15px;
+    background:rgba(0,0,0,.55);
+    backdrop-filter:blur(10px);
+    box-shadow:
+        0 0 20px #00ffff,
+        0 0 40px #ff00ff;
+}
+
+h1{
+    font-size:40px;
+    color:#00ffff;
+    text-shadow:
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 40px #00ffff;
+}
+
+p{
+    margin:20px 0;
+    color:#ffffff;
+    line-height:1.7;
+}
+
+button{
+    padding:15px 35px;
+    font-size:16px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:#ff00ff;
+    color:white;
+    box-shadow:0 0 15px #ff00ff;
+    transition:.3s;
+}
+
+button:hover{
+    background:#00ffff;
+    color:#000;
+    box-shadow:0 0 25px #00ffff;
+    transform:scale(1.05);
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>MENU</h1>
+    <p></p>
+    <button onclick="window.location.href='https://wa.me/+62 816-1562-7217';">
+   Admin Pesanan
+</button>
+    <p></p>
+    <button onclick="window.location.href='https://wa.me/+62 821-6788-1996';">
+    Admin Penjualan
+</button>
+    <p></p>
+    <button onclick="window.location.href='https://www.youtube.com';">
+    Mencari Solusi
+</button>
+    <p></p>
+    <button onclick="window.location.href='https://sites.google.com/view/situsprodukkami/halaman-muka';">
+    Produk kami
+</button>
+    <p></p>
+    <button onclick="window.location.href='https://www.shopee.com';">
+    Online shop
+</button>
+    <p></p>
+    <button onclick="window.location.href='https://tanibaik.id/';">
+    Pertanian
+</button>
+    <p></p>
+    <button onclick="window.location.href='https://www.fishiden.com/';">
+    Perikanan
+</button>
+    <p></p>
+    <button onclick="window.location.href='https://anakjalanan6556-png.github.io/website/lanjut.html';">
+    Lanjut
+</button>
+    <p></p>
+    <a href="tel:+6281234567890">
+    Hubungi kami
+</a>
+    
+</div>
+
+</body>
+</html>
